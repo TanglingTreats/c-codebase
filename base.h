@@ -16,6 +16,8 @@
 #define OS_MAC 1
 #elif defined(__gnu_linux__)
 #define OS_LINUX 1
+#elif defined(__ANDROID__)
+#define OS_ANDROID 1
 #else
 #error missing OS detection
 #endif
@@ -43,4 +45,8 @@
 #define OS_LINUX 0
 #endif
 
-#endif // BASE_H
+#if !defined(__ANDROID__)
+#define OS_ANDROID 0
+#endif
+
+#endif  // BASE_H
