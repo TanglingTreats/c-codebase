@@ -6,6 +6,7 @@ int main() {
 
   printf("macos = %d\n", OS_MAC);
   printf("linux = %d\n", OS_LINUX);
+  printf("android = %d\n", OS_ANDROID);
 
   printf("ARM64 = %d\n", ARCH_ARM64);
   printf("x86_64 = %d\n", ARCH_X64);

@@ -1,10 +1,14 @@
-CC=gcc
-CFLAGS=-I.
-DEPS=main.c
-OBJ=main.o
+CXX= gcc
+CXXFLAGS= -Wall -Werror -I. -std=c99
+RM= rm -f
 
-base: $(OBJ)
-	$(CC) -o $@ $< $(CFLAGS)
+.PHONY: all clean
 
-%.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
+all: main.o
+	gcc -o comp main.o
+
+clean:
+	$(RM) *.o
+
+main.o: main.c
+	gcc -c main.c
