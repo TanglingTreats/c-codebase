@@ -5,7 +5,7 @@ RM= rm -f
 .PHONY: all clean
 
 all: main.o
-	gcc -o comp main.o
+	gcc -o base main.o
 
 clean:
 	$(RM) *.o

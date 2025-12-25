@@ -10,7 +10,7 @@ int main() {
 
   printf("ARM64 = %d\n", ARCH_ARM64);
   printf("x86_64 = %d\n", ARCH_X64);
-  printf("x86 = %d\n", ARCH_X86);
+  printf("x86_32 = %d\n", ARCH_X86);
 
   return 0;
 }
